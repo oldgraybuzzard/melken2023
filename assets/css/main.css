@@ -83,8 +83,13 @@ main p {
 
 /* WHY WORK WITH US
 -------------------------------------------------- */
-.why-backgroung-img {
-  
+.why-center {
+  display: block;
+  margin-top: 1rem;
+  margin-left:auto;
+  margin-right: auto;
+  width: 75%;
+  border-radius: 15%;
 }
 
 /* RESPONSIVE CSS
