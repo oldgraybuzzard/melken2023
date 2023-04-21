@@ -24,7 +24,7 @@
                 <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#services">Services</a>
+                <a class="nav-link active" aria-current="page" href="#services-divider">Services</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#government" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Government</a>
@@ -57,13 +57,34 @@
   <main>
  
   <!-- Hero Section -->
-   <div class="px-4 pt-5 my-5 text-center border-bottom">
+   <div id="melken-hero" class="px-4 pt-5 my-5 text-center border-bottom">
     <h1 class="display-4 fw-bold">Empowering Your Mission With Our Mission</h1>
     <div class="col-lg-6 mx-auto">
       <p class="mb-4">Unlock your mission's potential - partner with Melken Solutions for success every step of the way!</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button id="sendEmail" onclick= "document.location = 'mailto:info@melken-solutions.com?Subject=I have a question about...&body=I visited your website and I would appreciate it if you could return my email. I would love your help with...'"" type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Contact Us</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Learn More</button>
+        <button id="sendEmail" onclick= "document.location = 'mailto:info@melken-solutions.com?Subject=I have a question about...&body=I visited your website and I would appreciate it if you could return my email. I would love your help with...'" type="button" class="btn btn-warning btn-lg px-4 me-sm-3">Contact Us</button>
+        <!-- Learn More Button trigger modal -->
+        <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#learn-more">
+          Learn More
+        </button>
+        <!-- Learn More Modal -->
+        <div class="modal fade" id="learn-more" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="learn-more" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="ietm">The Success of Your Mission Is Our Mission!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                At Melken Solutions, we strive to provide our clients with the highest quality of services and solutions tailored to meet their unique needs. Our team of experienced professionals is dedicated to delivering exceptional results and exceeding expectations. We take pride in our commitment to innovation, collaboration, and customer satisfaction. With a focus on excellence and continuous improvement, we are dedicated to providing reliable, efficient, and cost-effective solutions to help our clients achieve their goals. To learn more about our services and how we can help your business thrive, <a href="mailto:info@melken-solutions.com?Subject=I have a question about...&body=I visited your website and I would appreciate it if you could return my email. I would love your help with...">Contact Us</a> today.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Modal-->
       </div>
     </div>
     <div class="overflow-hidden" style="max-height: 50vh;">
@@ -73,12 +94,12 @@
     </div>
   </div>
 
-  <div class="b-divider"></div> 
+  <div id="services-divider" class="b-divider"></div> 
   <!-- End of Hero Section -->
   
   <!-- Start Marketing Section -->
-  <section>
-    <div class="container mkt-container">
+  <section id="services">
+    <div class="container">
       <div class="row text-center">
         <h2>Expert Support for Your Toughest Challenges</h2>
       </div>
@@ -88,7 +109,28 @@
             <div class="card-body">
               <h5 class="card-title">Interactive Electronic Technical Manuals (IETM)</h5>
               <p class="card-text">Upgrade your technical game with IETMs - interactive, intuitive, and instant access to all your technical documentation needs.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <!-- IETM Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ietm">
+                Learn More
+              </button>
+              <!-- IETM Modal -->
+              <div class="modal fade" id="ietm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ietm" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="ietm">What is an IETM?</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      It is a digital manual or technical documentation used by various industries, such as aviation, military, and manufacturing, to provide users with interactive access to technical information. An IETM typically text, graphics, videos, animations, and other multimedia elements that allow users to navigate and understand complex technical information easily. It is designed to be accessed on electronic devices such as computers, tablets, and smartphones, and can be updated and distributed more efficiently than traditional paper-based technical manuals. IETMs have become increasingly popular due to their ease of use, accessibility, and the ability to provide real-time information to users.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End Modal-->
             </div>
           </div>
         </div>
@@ -97,7 +139,28 @@
             <div class="card-body">
               <h5 class="card-title">Engineering Support</h5>
               <p class="card-text">Experience superior performance and cost savings with Melken Solutions' training system design and maintenance.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+               <!-- Enginnering SupportButton trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eng-support">
+                Learn More
+              </button>
+              <!-- Engineering Support Modal -->
+              <div class="modal fade" id="eng-support" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="eng-support" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="eng-support">Melken's Engineering Support Solutions</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      At Melken Solutions, we understand that logistics engineering is more than just a set of tasks to complete. It's about creating efficient and effective systems that keep your organization moving forward. That's why our team of experts works tirelessly to provide customized solutions that meet your specific needs. From design and development to implementation and ongoing support, we're here to help you streamline your operations, reduce costs, and achieve your goals. With Melken Solutions on your side, you can trust that your logistics engineering needs are in good hands.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End Engineering Support Modal-->
             </div>
           </div>
         </div>
@@ -106,28 +169,91 @@
             <div class="card-body">
               <h5 class="card-title">508 Accessibility</h5>
               <p class="card-text">Unlock your digital content's full potential with Melken Solutions' inclusive 508 Accessibility services..</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <!-- 508 Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#508">
+                Learn More
+              </button>
+              <!-- 508 Accessibility Modal -->
+              <div class="modal fade" id="508" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="508" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="508">What do you mean by 508 Accessibility?</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Accessibility isn't just about meeting regulations, it's about creating a world that's inclusive to all. At Melken Solutions, we believe that everyone should have equal access to digital content, which is why we offer comprehensive 508 accessibility services. From web design to document conversion, we'll help you unlock the full potential of your content and reach a wider audience. Let us help you create a more accessible and inclusive world, one byte at a time.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End 508 Accessibility Modal-->
             </div>
           </div>
         </div>
       </div>
     <div class="service-divider"></div> 
-      <div class="row mt-3">
+      <div class="row mt-1">
         <div class="col-sm-4">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Project Management</h5>
               <p class="card-text">Achieve your project goals with ease and precision through Melken Solutions' proven project management approach</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <!-- Project Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project">
+                Learn More
+              </button>
+              <!-- Project Modal -->
+              <div class="modal fade" id="project" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="project" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="project">Project Management</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Looking to take your project management to the next level? Look no further than Melken Solutions and our team of certified Project Management Professionals (PMPs). With our proven approach and expertise, we'll help you achieve your project goals with ease and precision, keeping you on time, on budget, and ahead of the competition. From planning to implementation, our PMPs have the skills and experience to ensure your success. So why wait? Contact Melken Solutions today and let us take your project management to the next level.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End Project Modal-->
             </div>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Integrated Logistics Support</h5>
+              <h5 class="card-title">Integrated Logistics Support (ILS)</h5>
               <p class="card-text">From planning to implementation, Melken Solutions' integrated logistics support has you covered.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <!-- ILS Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ils">
+                Learn More
+              </button>
+              <!-- ILS Modal -->
+              <div class="modal fade" id="ils" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ils" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="ils">Can you help me understand ILS?</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Maximizing the efficiency and reliability of your operations requires a comprehensive approach to logistics engineering. At Melken Solutions, we provide tailored support to ensure your equipment and systems are optimized for reliability, maintainability, and supportability. From initial planning to ongoing maintenance, we work closely with your team to minimize downtime and keep your operations running smoothly.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End ILS Modal-->
             </div>
           </div>
         </div>
@@ -136,75 +262,233 @@
             <div class="card-body">
               <h5 class="card-title">Training Solutions</h5>
               <p class="card-text">Maximize your training device ROI with Melken Solutions' tailored training programs.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
-    <div class="service-divider"></div>
-        <div class="row mt-3">
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Document Conversion</h5>
-              <p class="card-text">Unlock the full potential of your documents with Melken Solutions' comprehensive conversion solutions.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Data Entry</h5>
-              <p class="card-text">Maximize your productivity and streamline your operations with Melken Solutions' reliable data entry solutions.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Information Management</h5>
-              <p class="card-text">Achieve optimal data organization and accessibility with Melken Solutions' expert information management services.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <!-- Training Solutions Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#train">
+                Learn More
+              </button>
+              <!-- Training Solutions Modal -->
+              <div class="modal fade" id="train" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="train" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="ils">Training Solutions</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      At Melken Solutions, we offer tailored training solutions that meet the specific needs of the Department of Defense (DoD). Our team of experienced professionals delivers comprehensive training programs that focus on enhancing the performance, efficiency, and safety of your DoD training devices. We take pride in our ability to design and implement training programs that are effective, efficient, and cost-effective, ensuring that your personnel are fully prepared for any mission. From planning to implementation, we work closely with our clients to ensure that their training needs are met and exceeded. Learn more about our DoD training solutions and how we can help your organization achieve its training objectives.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End Training Solutions Modal-->
             </div>
           </div>
         </div>
       </div>
+    <div class="service-divider"></div>
+        <div class="row mt-1">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Document Conversion</h5>
+                <p class="card-text">Unlock the full potential of your documents with Melken Solutions' comprehensive conversion solutions.</p>
+                <!-- Document Conversion Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#document">
+                  Learn More
+                </button>
+                <!-- Document Conversion Modal -->
+                <div class="modal fade" id="document" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="document" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="ils">Document Conversion</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        At Melken Solutions, we understand the challenges of manual document processing, such as inaccuracies, inefficiencies, and delays. That's why we offer comprehensive document conversion solutions that help you streamline your document management processes and optimize your workflows. Our team of experts will work closely with you to ensure that your documents are accurately converted into the desired format, whether it's electronic, digital, or paper-based. With our advanced document conversion technology and tools, you can enjoy enhanced document accessibility, better data accuracy, and improved overall productivity. Learn more about how Melken Solutions can help you transform your document management processes today.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End Document Conversion Modal-->
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Data Entry</h5>
+                <p class="card-text">Maximize your productivity and streamline your operations with Melken Solutions' reliable data entry solutions.</p>
+                <!-- Data Entry Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#data">
+                  Learn More
+                </button>
+                <!-- Data Entry Modal -->
+                <div class="modal fade" id="data" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="data" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="ils">Data Entry</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        At Melken Solutions, we understand that accurate and efficient data entry is essential in the healthcare industry. That's why we offer comprehensive medical data entry services to help healthcare providers streamline their operations and improve patient care. Our experienced team of data entry specialists is trained in medical terminology, coding, and regulations, ensuring that all data is entered correctly and securely. We work closely with our clients to understand their unique needs and tailor our services to provide the best possible solutions. With Melken Solutions, healthcare providers can focus on delivering quality care while we handle their data entry needs.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End Data Entry Modal-->
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Information Management</h5>
+                <p class="card-text">Achieve optimal data organization and accessibility with Melken Solutions' expert information management services.</p>
+                <!-- Information Management Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#information">
+                  Learn More
+                </button>
+                <!-- Information Management Modal -->
+                <div class="modal fade" id="information" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="information" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="ils">Information Management</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Managing information effectively is essential for any business. It can mean the difference between success and failure. At Melken Solutions, we understand the importance of information management and we have the expertise to help you achieve your goals. Our team of professionals can provide you with comprehensive information management solutions tailored to your specific needs. We can help you organize your data, streamline your processes, and provide you with the tools you need to make informed decisions. Whether you need help with data analysis, data migration, or data governance, we have the experience and expertise to deliver the results you need. Trust us to help you unlock the full potential of your information and take your business to the next level.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End Information Management Modal-->
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   </section>
-    <div class="b-divider"></div> 
+  <div class="b-divider"></div> 
   <!-- End of Marketing -->
+   
+  <!-- Government -->
+   <section id="government" class="container">
+    <h1 class="px-4 pt-5 my-5 text-center">Committed to serving those who serve our nation - your trusted government services partner.</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">NAICS</h5>
+                <ul>
+                  <li>541990 (Primary)</li>
+                  <li>518210</li>
+                  <li>541611</li>
+                  <li>511130</li>
+                  <li>561410</li>
+                  <li>611710</li>
+                  <li>541930</li>
+                  <li>561439</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Socioeconomic Data</h5>
+                  <ul>
+                    <li>Service Disabled Veteran Owned Small Business (Certified)</li>
+                    <li>Minority Owned Small Business</li>
+                    <li>Economically Disadvantaged</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Business Information</h5>
+                  <ul>
+                    <li>SUEI: SU9DCC122AB6</li>
+                    <li>CAGE Code: 56UY7</li>
+                    <li>GSA: GS-03F-027GA</li>
+                    <li>ISO 9001:2015</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="capability-statement" class="container">
+          <h1 class="px-4 pt-5 my-5 text-center">Melken Capability Statement</h1>
+            <object data="/assets/pdf/MelkenSolutionsCapabilityStatement2022.pdf" type="application/pdf" width="100%" height="1200px"></object>
+              <p>Unable to display PDF file. <a href="/assets/pdf/MelkenSolutionsCapabilityStatement2022.pdf">Download</a> instead.</p>
+            
+        </div>
+        <div id="contract-vehicles" class="container">
+          <h1 class="px-4 pt-5 my-5 text-center">Melken Contract Vehicles</h1>
+          <h2 class="px-2 pt-2 my-2 text-center">GSA </h2>
+            <object data="/assets/pdf/GS-03F-027GA_GS03F027GAMELKENS012722.pdf" type="application/pdf" width="100%" height="1200px"></object>
+              <p>Unable to display PDF file. <a href="/assets/pdf/GS-03F-027GA_GS03F027GAMELKENS012722.pdf">Download</a> instead.</p>
+            
+        </div>
+  </section>
+
+   <div class="b-divider"></div>
+  <!-- End Government-->
 
   <!-- Why Work With Us -->
-  <section id="whyMelken" class="container-fluid">
-    <h1 class="px-4 pt-5 my-5 text-center border-bottom">Why Partner with Melken Solutions?</h1>
-    <div id="carouselMelkenCaptions" class="carousel slide">
+  <section id="why-melken" class="container-fluid">
+    <h1 class="px-4 pt-5 my-5 text-center">Why Partner with Melken Solutions?</h1>
+    <div id="carousel-melken-captions" class="carousel slide carousel-fade">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselMelkenCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Reason 1"></button>
-        <button type="button" data-bs-target="#carouselMelkenCaptions" data-bs-slide-to="1" aria-label="Reason 2"></button>
-        <button type="button" data data-bs-target="#carouselMelkenCaptions" data-bs-slide-to="2" aria-label="Reason 3"></button>
+        <button type="button" data-bs-target="#carousel-melken-captions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel-melken-captions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data data-bs-target="#carousel-melken-captions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/assets/images/people-working at table.jpg" class="d-block w-100" alt="peope working at table">
-          <div class="carousel-caption d-none d-md-block">
+        <div id="reason-1" class="carousel-item active">
+          <img src="/assets/images/collaborating.jpg" class="d-block" alt="wooden people huddling together">
+          <div class="carousel-caption d-md-block">
             <h3>Innovation through collaboration - Melken Solutions' team approach.</h3>
             <p>We believe that by bringing together diverse perspectives and expertise, we can achieve better results for our clients.</p>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="/assets/images/brainstorming.jpg" class="d-block w-100" alt="light bulbs with ideas">
-          <div class="carousel-caption d-none d-md block">
-            <h3>"Innovative Solutions for Your Toughest Challenges</h3>
+        <div id="reason-2" class="carousel-item">
+          <img src="/assets/images/brainstorming.jpg" class="d-block" alt="light bulbs with ideas">
+          <div class="carousel-caption d-md block">
+            <h3>Innovative Solutions for Your Toughest Challenges</h3>
             <p>Unlock new possibilities with Melken Solutions' cutting-edge technology and expert team.</p>
           </div>
         </div>
+         <div id="reason-3" class="carousel-item">
+          <img src="/assets/images/puzzle.jpg" class="d-block" alt="puzzle piece">
+          <div class="carousel-caption d-md block">
+            <h3>Piecing together innovative solutions for your unique needs</h3>
+            <p>At Melken Solutions, we believe that every problem is a puzzle waiting to be solved. That's why we work with you to put the pieces together and create innovative solutions that meet your unique needs.</p>
+          </div>
+        </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMelkenCaptions" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-melken-captions" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselMelkenCaptions" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-melken-captions" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -213,6 +497,8 @@
 
 
   <!-- End Why Work With Us -->
+
+
   
 
   </main>
